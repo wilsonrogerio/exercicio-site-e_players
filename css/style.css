@@ -10,7 +10,7 @@
     
 }
 .grid{
-    max-width: 1200px;
+    max-width: 1300px;
     width: 90%;
     margin: 0 auto;
 }
@@ -83,4 +83,15 @@ header{
     background-color: #C31616;
     padding:  15px 22px;
     border-radius: 12px;   
+}
+.barra_games{
+    display: flex;
+    background-color: black;
+    height: 140px;
+    align-items: center;
+}
+.imagem_games{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
