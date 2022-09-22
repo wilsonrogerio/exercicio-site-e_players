@@ -59,6 +59,8 @@ h1{
     
 }
 
+
+
 .banner{
     background-image: url(../img/banner.png);
     height: 810px;
@@ -98,6 +100,11 @@ h1{
     padding:  15px 22px;
     border-radius: 12px;   
 }
+
+
+
+
+
 .barra_games{
     display: flex;
     background-color: black;
@@ -111,6 +118,11 @@ h1{
     padding: 54px 0;
     flex-wrap: wrap;
 }
+
+
+
+
+
 .ofertas{
     background-color: #1E1C21;
 }
@@ -128,9 +140,10 @@ h1{
 .cards{
     width: 215px;
     height: 335px;
-    background-color:black;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px #000000;
     border-radius: 10px; 
-    margin: 0px 30px 60px 60px;   
+    margin: 0px 80px 50px 0px;   
 }
 .cards p,h3{
     color: white;
@@ -142,6 +155,7 @@ h1{
 }
 
 .cards a{
+    display: flex;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -149,7 +163,75 @@ h1{
     margin: 25px;
     padding: 10px 40px;
     border-radius: 12px;
+    
 }
+.cards a:hover{
+    scale: 1.1;
+}
+
+
+
+
+
+.sobre{
+    background: url(../img/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 490px;
+
+}
+.img_texto{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.texto_descricao{
+    color: white;
+    padding-top: 50px;
+}
+
+
+
+
+
+footer{
+    background-color: #010101;
+    
+
+
+}
+footer h2{
+    color: white;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
+.links_footer{
+    display: flex;
+    color: white;
+}
+.links_footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+}
+footer .box_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_contato{
+    color: white;
+}
+
+
+
+
+
 @media screen and (max-width: 1200px) {
     .logo{
         width: 240px;
@@ -167,9 +249,32 @@ h1{
     
 }
 @media screen and (max-width: 768px) {
+    .cabecalho_alinhamento{
+        position: relative;
+    }
+    
     .menu{
         display: none;
+        flex-direction: column;
+        width: 150px;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        background-color: rgba(0, 0, 0, 0.815);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px ;
+
+
     }
+    .menu a{
+        margin: 5px;
+        text-align: end;
+
+
+    }
+    
+    
     .barras{
         display: flex;
     }
