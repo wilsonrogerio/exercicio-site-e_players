@@ -14,6 +14,13 @@
     width: 90%;
     margin: 0 auto;
 }
+
+
+
+
+
+
+/*css header*/
 header{
     background-color: #1E1C21;
     height: 80px;
@@ -61,6 +68,11 @@ h1{
 
 
 
+
+
+
+/*css do banner*/
+
 .banner{
     background-image: url(../img/banner.png);
     height: 810px;
@@ -105,6 +117,8 @@ h1{
 
 
 
+/*css da barra de games*/
+
 .barra_games{
     display: flex;
     background-color: black;
@@ -122,6 +136,10 @@ h1{
 
 
 
+
+
+
+ /*css das ofertas*/
 
 .ofertas{
     background-color: #1E1C21;
@@ -173,13 +191,15 @@ h1{
 
 
 
-.sobre{
-    background: url(../img/fundo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 490px;
 
+/*css da area de como participar das ligas*/
+
+.sobre{
+    background-image: url(../img/Fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    
 }
 .img_texto{
     display: flex;
@@ -191,16 +211,22 @@ h1{
     color: white;
     padding-top: 50px;
 }
+.img_descricao{
+    height: 600px;
+    width: 100%;
+}
 
 
 
 
+
+
+/*css footer*/
 
 footer{
     background-color: #010101;
-    
-
-
+    padding: 20px;
+    height: 100%;
 }
 footer h2{
     color: white;
@@ -212,6 +238,7 @@ footer h2{
 .links_footer{
     display: flex;
     color: white;
+
 }
 .links_footer a{
     color: white;
@@ -231,6 +258,8 @@ footer .box_logo{
 
 
 
+
+  /*responsividade*/
 
 @media screen and (max-width: 1200px) {
     .logo{
