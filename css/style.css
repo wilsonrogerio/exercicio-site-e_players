@@ -81,6 +81,19 @@ h1{
     width: 100%;
     
 }
+.banner_f1{
+    background-image: url(../img/banner.png);
+
+}
+.banner_cs{
+    background-image: url(../img/banner_cs.png);
+}
+.banner_lol{
+    background-image: url(../img/banner_lol.png);
+}
+
+
+
 .posicao_texto{
     display: flex;
     justify-content: flex-end;
@@ -146,7 +159,7 @@ h1{
 }
 .ofertas h2{
     color: white;
-    padding: 25px;
+    padding: 20px;
 }
 
 .ofertas_cards{
@@ -157,18 +170,25 @@ h1{
 
 .cards{
     width: 215px;
-    height: 335px;
+    height: 320px;
     background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
     box-shadow: 1px 1px 20px 4px #000000;
     border-radius: 10px; 
     margin: 0px 80px 50px 0px;   
 }
-.cards p,h3{
+.cards h3{
     color: white;
-    padding-left: 25px;
+    padding-left: 10px;
+    font-size: 25px;
 }
+.cards p{
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
 #valor{
-    font-size: larger;
+    font-size: 18px;
     color: orange;
 }
 
@@ -178,7 +198,7 @@ h1{
     color: white;
     text-transform: uppercase;
     background-color: #C31616;
-    margin: 25px;
+    margin: 10px;
     padding: 10px 40px;
     border-radius: 12px;
     

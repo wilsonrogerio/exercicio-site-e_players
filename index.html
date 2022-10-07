@@ -7,10 +7,11 @@
     <title>E-Players home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.1.js" defer></script>
     <script src="./js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
 </head>
-<body>
+<body onload="renderizarProdutos()">
     <header>
         <div class="grid cabecalho_alinhamento">
             <h1>Home site E-Players</h1>
@@ -22,10 +23,10 @@
                 <a href="">Resultados</a>
                 <a href="">Notícias</a>
             </nav>
-            <a onclick="mostrarMenu()" class="barras" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+            <a onclick="mostrarMenuJquery()" class="barras" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
         </div>
     </header>
-   <section class="banner">
+   <section class="banner banner_cs">
       <div class="grid posicao_texto">
            <div class="texto_banner">
               <span>Liga E-Players</span>
@@ -46,63 +47,8 @@
    <section class="ofertas">
        <div class="grid">
         <h2>Ofertas</h2>
-        <div class="ofertas_cards">
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
-            <div class="cards">
-                <img src="img/T1 1.png" alt="">
-                <h3>Jogo do ano</h3>
-                <p>Descriçao do jogo</p>
-                <p id="valor">R$45,00</p>
-                <a href="">comprar</a>
-            </div>
+        <div id="secao_produtos" class="ofertas_cards">
+            
         </div>
     </div>  
 
