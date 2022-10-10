@@ -228,6 +228,8 @@ h1{
 
 
 .texto_descricao{
+    display: flex;
+    flex-direction: column;
     color: white;
     padding-top: 50px;
 }
