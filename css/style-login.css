@@ -11,7 +11,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(178.35deg, rgba(35, 104, 236, 0.97) 32.89%, rgba(3, 87, 249, 0.47) 135.75%);
+    /* background: linear-gradient(178.35deg, rgba(35, 104, 236, 0.97) 32.89%, rgba(3, 87, 249, 0.47) 135.75%); */
+    background-color: #1E1C21;
     height: 100vh;
     width: 100vw;
 }
